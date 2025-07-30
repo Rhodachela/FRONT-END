@@ -31,8 +31,22 @@ function Home() {
     // This runs every time the user types in the search box
     useEffect(() => {
         const delaySearch = setTimeout(async () => {
-            if (!searchQuery.trim()) return;
-            
+            if (!searchQuery.trim()) {
+                setLoading(true); // Add this
+             try {
+                 const popularMovies = await getPopularMovies();
+                setMovies(popularMovies);
+                setError(null);
+        } catch (err) {
+                console.error(err);
+                setError("Failed to load movies...");
+    }       finally {
+             setLoading(false);
+    }
+            return;
+}
+
+            // If there's text, search for matching movies
             try {
                 setLoading(true);
                 const searchResults = await searchMovies(searchQuery);
@@ -44,7 +58,8 @@ function Home() {
             } finally {
                 setLoading(false);
             }
-        }, 500); // ⏱️ delay to avoid searching on every keystroke
+        },); // ⏱️ delay to avoid searching on every keystroke
+
         return () => clearTimeout(delaySearch); // Cleanup to avoid spam
     }, [searchQuery]);
 
