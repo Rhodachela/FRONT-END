@@ -6,7 +6,7 @@
   transition: transform 0.2s;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
 }
 
 .movie-card:hover {
