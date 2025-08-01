@@ -39,7 +39,7 @@ function Home() {
                 setError(null);
         } catch (err) {
                 console.error(err);
-                setError("Failed to load movies...");
+                setError("Failed to load movies....");
     }       finally {
              setLoading(false);
     }
