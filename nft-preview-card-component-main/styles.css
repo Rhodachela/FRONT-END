@@ -14,4 +14,6 @@
     background-color: hsl(216, 50%, 16%);
     height: 50%;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
