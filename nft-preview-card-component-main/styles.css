@@ -1,0 +1,17 @@
+/* * {
+    padding: 0;
+    box-sizing: 0;
+    margin: 0cm; */
+
+.container {
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background-color: hsl(216, 50%, 16%);
+    height: 50%;
+    border-radius: 10px;
+}
