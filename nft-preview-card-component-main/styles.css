@@ -9,11 +9,99 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 300, 400, 600;
+    
 }
 .card {
     background-color: hsl(216, 50%, 16%);
-    height: 52%;
+    height: 70%;
+    width: 340px;
     border-radius: 12px;
     display: flex;
+    padding: 25px;
     flex-direction: column;
+}
+.img-cont{
+    height: 50%;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+}
+.img-cont img {
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+    
+
+}
+.card h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 300, 400, 600;
+    font-family: "Outfit", sans-serif;
+    font-weight: lighter;
+    
+}
+.card p {
+    color: hsl(215, 51%, 70%);
+    margin-top: 2px;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    line-height: 30px;
+    font-weight: lighter;
+    margin-bottom: 8px;
+    
+    
+}
+.card .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 5%;
+    
+}
+.card .items .pic {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.card .items .pic img {
+    height: 20px;
+}
+.card .items .pic h3{
+    font-weight: 550;
+}
+
+.card .items .right {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    height: 5%;
+}
+.card .items .right img {
+    height: 20px;
+}
+.card .items .right h3{
+    font-weight: 500;
+}
+
+hr {
+    color:hsl(215, 51%, 70%);
+    width: 100%;
+    margin: 1rem 0;
+    border: none;
+    border-top: 1px solid hsl(215, 32%, 27%); /* subtle light line */
+
+}
+.profile {
+    display: flex;
+    background-color: blanchedalmond;
+}
+.profile img {
+    height: 100%;
 }
