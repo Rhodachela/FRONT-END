@@ -15,9 +15,9 @@
 .card {
     background-color: hsl(216, 50%, 16%);
     height: 70%;
-    width: 340px;
+    width: 275px;
     border-radius: 12px;
-    display: flex;
+    display: flexbox;
     padding: 25px;
     flex-direction: column;
 }
@@ -103,7 +103,7 @@ hr {
     gap: 0.4rem;
     width: 100%;
     margin-top: 0;
-    height: 12%;
+    height: 8%;
     align-items: center;
 }
 .profile img {
