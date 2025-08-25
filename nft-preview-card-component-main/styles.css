@@ -98,10 +98,20 @@ hr {
     border-top: 1px solid hsl(215, 32%, 27%); /* subtle light line */
 
 }
-.profile {
+.card .profile {
     display: flex;
-    background-color: blanchedalmond;
+    gap: 0.4rem;
+    width: 100%;
+    margin-top: 0;
+    height: 12%;
+    align-items: center;
 }
 .profile img {
     height: 100%;
+    margin-right: 10px;
+}
+.profile .p2 {
+    color: hsl(0, 0%, 100%);
+    justify-content: center;
+
 }
