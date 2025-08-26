@@ -31,7 +31,7 @@ body {
 .newsletter-cta {
     background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
-    max-width: 900px;
+    max-width: 895px;
 }
 @media (min-width: 650px) {
     .newsletter-cta {
