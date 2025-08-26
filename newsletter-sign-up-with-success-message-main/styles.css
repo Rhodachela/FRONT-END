@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Roboto regular';
+    src: url("./assets/fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url("./assets/fonts/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+ul [role ="list"] {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+body {
+    font-family: Roboto regular;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: hsl(235, 18%, 26%);
+}
+.newsletter-cta {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    max-width: 900px;
+}
+@media (min-width: 650px) {
+    .newsletter-cta {
+        margin-inline: 1rem;
+        display: grid;
+        align-items: center;
+        padding: 2rem;
+        border-radius: 1rem;
+        grid-template-columns: 1fr .75fr;
+    }
+}
+.newsletter-cta > .content {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.newsletter-cta > .content {
+    padding: 1.5rem;
+    display: grid;
+    gap: 1rem;
+    
+}
+
+.newsletter-cta .title {
+    font-weight: 900;
+}
+
+.newsletter-cta img {
+    margin-inline: auto;
+}
+.checkmark-list{
+    list-style: none;
+    display: grid;
+    gap: .625rem;
+
+}
+.checkmark-list li {
+    display: grid;
+    grid-template-columns: 2rem auto;
+
+}
+.checkmark-list li::before {
+    content: url('./assets/images/icon-list.svg');
+}
+input {
+    padding: 1rem;
+    border-radius: 15px;
+    font: inherit;
+    font-size: 400;
+    font-weight: 700;
+    border: .1px solid;
+
+}
+input::placeholder {
+    color: 200;
+}
+input:not(:focus):invalid {
+    border: 1px solid var();
+    color:red;
+
+}
+.form-group {
+    font-size: 400;
+    font-weight: bold;
+    display: grid;
+    gap: .5rem;
+}
+.form-group .error {
+    grid-row: 1;
+    grid-column: 2;
+    text-align: end;
+    color: rgba(255, 0, 0, 0.712);
+    display: none;
+}
+.form-group:has(:not(:focus):invalid) > .error {
+    display: block;
+}
+
+.form-group.with-error-field {
+    display: flex;
+    flex-direction: column;
+}
+.form-group.with-error-field> input {
+    width: 100%;
+}
+.button {
+    background: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    border: 0;
+    padding: 1rem;
+    border-radius: 15px;
+    font: inherit;
+}
+.button:hover,
+button:focus-visible {
+    position: relative;
+    background-image: linear-gradient(hsl(4, 100%, 67%));
+}
+form {
+    isolation: isolate;
+}
+
+.button:hover::after,
+.button:focus-visible{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    border-radius: inherit;
+    translate: 0 1.5rem;
+    filter: blur(1rem);
+    opacity: .5;
+    z-index: -1;
+    
+
+}
+.cta-form {
+    display: grid;
+    gap: 1.5rem;
+    margin-block-start: 1.5rem;
+}
