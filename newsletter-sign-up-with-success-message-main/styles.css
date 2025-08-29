@@ -59,8 +59,11 @@ body {
     font-weight: 900;
 }
 
-.newsletter-cta img {
+.newsletter-cta img,
+.newsletter-cta picture {
     margin-inline: auto;
+    width: 100%;
+    display: block;
 }
 .checkmark-list{
     list-style: none;
@@ -153,4 +156,8 @@ form {
     display: grid;
     gap: 1.5rem;
     margin-block-start: 1.5rem;
+}
+.image {
+    display: flex;
+    align-items: center;
 }
