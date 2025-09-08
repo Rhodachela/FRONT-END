@@ -114,14 +114,19 @@ hr {
 }
 @media (min-width: 320px) {
     .container {
-        padding: 0;
+        padding: 40px;
     }
-    .card {
-        min-width: 280px;
+    .container .card {
+        min-width: 200px;
     }
     
     .card p {
-        font-size: 16px;
+        font-size: 10px;
+        margin-inline: 0;
+        line-height: 1rem;
+    }
+    .card h2, h3 {
+        font-size: 14px;
     }
 }
 @media (min-width:1024px) {
@@ -134,5 +139,6 @@ hr {
     }
     .card p {
         font-size: 14px;
+        line-height: 25px;
     }
 }
