@@ -19,20 +19,44 @@
     padding: 25px;
     height: auto;
 }
-.card .img-cont{
+.img-cont{
     width: 100%;
     border-radius: 10px;
-    overflow: hidden;
-    display: flex;
     justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 .img-cont img {
     border-radius: 10px;
     width: 100%;
-    height: 250px;
-    
+    height: auto;
+    display: block;
+}
+.img-cont::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: hsl(178, 100%, 60%, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+.img-cont::after {
+    content: url("./images/icon-view.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-cont:hover:before, .img-cont:hover:after {
+    opacity: 1;
 
 }
+
 .card h2 {
     color: hsl(0, 0%, 100%);
     font-family: "Outfit", sans-serif;
@@ -51,6 +75,7 @@
     
     
 }
+
 .card .items {
     display: flex;
     justify-content: space-between;
@@ -58,6 +83,14 @@
     width: 100%;
     padding: 5px;
     
+}
+.card h2 {
+    color: hsl(0, 0%, 100%);
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.card h2:hover {
+    color: hsl(178, 100%, 50%);
 }
 .card .items .pic {
     color: hsl(178, 100%, 50%);
@@ -110,7 +143,12 @@ hr {
 .profile .p2 {
     color: hsl(0, 0%, 100%);
     justify-content: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
 
+}
+.profile .p2:hover {
+    color: hsl(178, 100%, 50%);
 }
 @media (min-width: 320px) {
     .container {
@@ -131,7 +169,7 @@ hr {
 }
 @media (min-width:1024px) {
     .card {
-        max-width: 400px;
+        max-width: 300px;
         
     }
     .card h2, h3 {
