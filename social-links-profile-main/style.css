@@ -48,6 +48,7 @@
 .card h3 {
     color: hsl(0, 0%, 100%);
     margin-top: 10px;
+    text-align: center;
 }
 .card p {
     color: hsl(75, 94%, 57%);
