@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="form-card">
+    <h2>Contact Us</h2>
+
+    <form>
+      <div class="form-row">
+        <div class="form-a">
+          <label for="fname" class="required">First Name</label>
+          <input type="text" id="fname" name="fname" required>
+        </div>
+
+        <div class="form-a">
+          <label for="lname" class="required">Last Name</label>
+          <input type="text" id="lname" name="lname" required>
+        </div>   
+        <div class="form-a">
+          <label for="lname" class="required">Last Name</label>
+          <input type="text" id="lname" name="lname" required>
+        </div>
+        <div class="form-a">
+          <label for="lname" class="required">Last Name</label>
+          <input type="text" id="lname" name="lname" required>
+        </div>
+        <div class="form-a">
+          <label for="lname" class="required">Last Name</label>
+          <input type="text" id="lname" name="lname" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="required">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label class="required">Query Type</label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="query" value="general" required>
+            <span>General Enquiry</span>
+          </label>
+
+          <label class="radio-option">
+            <input type="radio" name="query" value="support" required>
+            <span>Support Request</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group text-area-container">
+        <label for="message" class="required">Message </label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <div class="form-group checkbox">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent" class="required">I consent to being contacted by the team</label>
+      </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+</body>
+</html>
