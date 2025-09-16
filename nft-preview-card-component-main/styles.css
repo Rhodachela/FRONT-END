@@ -150,12 +150,14 @@ hr {
 .profile .p2:hover {
     color: hsl(178, 100%, 50%);
 }
-@media (min-width: 320px) {
+@media (width <= 520px) {
     .container {
-        padding: 40px;
+        display: flex;
+        align-items: normal;
     }
     .container .card {
-        min-width: 200px;
+        min-width: 250px;
+        border-radius: 10px;
     }
     
     .card p {
@@ -165,6 +167,24 @@ hr {
     }
     .card h2, h3 {
         font-size: 14px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 40px;
+    }
+    .container .card {
+        min-width: 250px;
+        border-radius: 10px;
+    }
+     .card h2, h3 {
+        font-size: 16px;
+    }
+    .card p {
+        font-size: 14px;
+        line-height: 25px;
     }
 }
 @media (min-width:1024px) {
