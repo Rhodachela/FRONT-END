@@ -16,6 +16,7 @@ body {
     width: auto;
     max-width: 1200px;
     flex-shrink: 1;
+    border: 1px solid rgba(52, 214, 206, 0.952);
 
 
     display: grid;
@@ -28,6 +29,15 @@ body {
     gap: 1.5rem;
     flex-shrink: 1;
     grid-template-columns: 200px 200px 200px 200px;
+}
+.container > div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+}
+.container > div:hover {
+    transform: scale(1.09);
+    box-shadow: 0 6px 16px rgba(o, 0, 0, 0.15);
 }
 .card-1 {
     background-color: hsl(31, 66%, 93%);
