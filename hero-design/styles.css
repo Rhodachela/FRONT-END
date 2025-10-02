@@ -43,13 +43,13 @@ main {
 .logo {
   display: flex;
   align-items: center;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 900;
   color: rgb(190, 50, 50);
 }
 
 .logo-icon {
-  height: 80px;  
+  height: 50px;  
   width: auto;
 }
 
