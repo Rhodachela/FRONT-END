@@ -121,12 +121,13 @@ function findLargestNumber(arr){
     let largest = arr[0];
     for (let i =1; i < arr.length; i++){
         if (arr[1] > largest) {
-            largest = arr[1];
+            largest = arr[i];
         }
+        
     }
     return largest;
 }
-console.log(findLargestArray([3, 7, 90, 45, 13]))
+console.log(findLargestNumber([3, 7, 90, 45, 13]))
 
 // Javascript code for a Palindrome checker
 // Using split, reverse and join
