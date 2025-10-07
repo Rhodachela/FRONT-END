@@ -1,4 +1,4 @@
-/* const input = document.querySelector("input");
+ const input = document.querySelector("input");
 input.setAttribute("placeholder", "Modified placeholder");
 
 input.addEventListener("click", () => {
@@ -16,9 +16,9 @@ input.addEventListener("click", () => {
 
     para.parentNode.appendChild(newElement);
 
-}); */
+}); 
 
-/* function generateNewTable(){
+ function generateNewTable(){
     // Creating a table element and a tbody element
     const tbl = document.createElement("table");
     const tblbody = document.createElement("tbody");
@@ -56,12 +56,12 @@ input.addEventListener("click", () => {
 document 
     .querySelector("input[type = button]")
     .addEventListener("click", generateNewTable);
-*/
+
 
 function setBackgroundColor(){
     const paragraphs = document.getElementsByTagName("p");
     const secondPara = paragraphs[1];
 
-    secondPara.style.background = "aqua";
+    secondPara.style.background = "pink";
 }
 document.querySelector("input").addEventListener("click", setBackgroundColor);
