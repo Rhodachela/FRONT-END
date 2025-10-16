@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+html, body{
+    max-height: 100vh;
+    height: 100%;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(to bottom, #1e2a35, #2f3e4a);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.container{
+    display: flex;
+    height: auto;
+    max-width: 500px;
+    border-radius: 18px;
+    padding: 1.5rem;
+    align-items: center;
+    gap: 1rem;
+}
+#sports{
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    height: auto;
+    display: flex;
+    gap: 0.6rem;
+    flex-direction: column;
+    border: 2px solid white;
+}
+#sports li{
+    border: 1px solid white;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+.boxes{
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+#heading{
+    transform-origin: left;
+    font-size: 2rem;
+}
+#main-heading{
+    font-size: 3rem;
+}
+/* button{
+    border-radius: 15px;
+    padding: 0.6rem;
+    border: 1px solid blue;
+    cursor: pointer;
+    width: 70%;
+}
+button:hover{
+    background-color: #0256aa;
+    color: white;
+} */
+
+
+#second-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: auto;
+    overflow: hidden;
+}
+.reveal-btn {
+    background-color: cadetblue;
+
+}
+.reveal-btn:hover{
+    background-color: #0256aa;
+    color: white;
+    cursor: pointer;
+}
+.hidden-content{
+    height: 200px;
+    display: none;
+}
+.hidden-content.reveal-btn{
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+li.list-items{
+    background-color: white;
+    margin: 8px 0;
+    border-radius: 2px; 
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 1.1rem;
+    color: black;
+    cursor: pointer;
+
+}
+li.list-items:hover{
+    background-color:#0256aa;
+}
