@@ -13,6 +13,11 @@ let leadingSeconds = 0;
 let leadingMinutes = 0;
 let leadingHours = 0;
 
+// Variables for set interval and timestatus
+
+let timerInterval = null;
+let timerStatus = "stopped";
+
 // Stop Watch Function
 
 function stopWatch() {
@@ -41,6 +46,7 @@ function stopWatch() {
         leadingMinutes = minutes;
     }
     // Leading Hours
+
      if (hours < 10){
         leadingHours = "0" + hours.toString();
     } else {
@@ -52,3 +58,30 @@ function stopWatch() {
 }
 
 // window.setInterval(stopWatch, 1000);
+
+startStopBtn.addEventListener("click", function(){
+    if (timerStatus === "stopped"){
+        timerInterval = window.setInterval(stopWatch, 1000);
+        document.getElementById('startStopBtn').innerHTML = 
+        `<i class = "fa-solid fa-pause" id="pause"></i>`;
+        timerStatus = "started";
+    }
+    else{
+        window.clearInterval(timerInterval);
+        document.getElementById('startStopBtn').innerHTML = 
+        `<i class = "fa-solid fa-play" id = "play" ></i>`;
+        timerStatus = "stopped";
+    }
+})
+
+resetBtn.addEventListener("click", function(){
+    window.clearInterval(timerInterval);
+    document.getElementById('startStopBtn').innerHTML = 
+        `<i class = "fa-solid fa-play" id = "play" ></i>`;
+
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        document.getElementById('timer').innerText = "00:00:00";
+        timerStatus = "stopped";      
+});
