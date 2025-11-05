@@ -6,7 +6,7 @@ dist/
 build/
 
 # Editor settings
-.vscode/
+../.vscode/
 
 # Logs
 npm-debug.log*
