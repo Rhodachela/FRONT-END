@@ -123,7 +123,8 @@ function ProductRow({product}){
     {category: 'Legumes', price: '$50', stocked: false, name: 'Beans'},
     {category: 'Drinks', price: '$100', stocked: true, name: 'Milkshake'},
     {category: 'Drinks', price:'$38', stocked: true, name: 'Fanta Orange'},
-    {category: 'Sea Food', price: '$127', stocked: false, name: 'Lobster'}
+    {category: 'Sea Food', price: '$127', stocked: false, name: 'Lobster'},
+    {category: 'Snacks', price: '$15', stocked: true, name: 'Biscuits'}
   ];
 
   export default function App() {
