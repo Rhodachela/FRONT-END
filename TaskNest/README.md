@@ -31,6 +31,3 @@ It provides real-time task syncing, priority-based organization, progress tracki
 - **Lucide Icons**
 
 ---
-
-## 📁 Project Structure
-
