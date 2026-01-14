@@ -58,7 +58,7 @@ function InnerApp() {
   const handleDelete = (taskId) => {
     deleteTask.mutate(taskId, {
       onSuccess: () => {
-        setToast({ message: "Task deleted successfully!", type: "success" });
+        setToast({ message: "Task deleted successfully!", type: "success",  });
       },
       onError: () => {
         setToast({ message: "Failed to delete task!", type: "error" });

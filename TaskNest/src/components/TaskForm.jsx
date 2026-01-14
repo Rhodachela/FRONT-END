@@ -9,6 +9,7 @@ import {
   SelectContent,
   SelectItem,
   SelectValue,
+  
 } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -22,7 +23,6 @@ export default function TaskForm({ onAdd }) {
     e.preventDefault();
     const trimmedTask = task.trim();
 
-    // --- VALIDATIONS ---
     if (!trimmedTask) {
       setToast({ message: "Please enter a task", type: "error" });
       return;
